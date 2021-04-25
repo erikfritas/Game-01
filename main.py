@@ -229,6 +229,7 @@ class Botao:
         def is_clicked(self):
             return pyg.mouse.get_pressed()[0] and self.btn.collidepoint(pyg.mouse.get_pos())
 
+# GAME MAP STARTS CREATION
 
 with open('./res/mapas/mapa1.txt') as m1:
     game_map = m1.readlines()
@@ -270,6 +271,8 @@ def generate(gm):
 
 newm = generate(game_map)
 i = 0
+
+# GAME MAP FINISHES CREATION
 
 
 def colision_obj(img, x, y, w, h):
