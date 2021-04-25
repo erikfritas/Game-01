@@ -19,8 +19,6 @@ WINDOW_SIZE = [(window_width+4)*2, (window_height+50)*2]
 SURF_SIZE = [window_width+4, window_height+50]
 
 display = pyg.display.set_mode(WINDOW_SIZE, FULLSCREEN)  # FULLSCREEN padrao, RESIZABLE dev_mode
-# time.sleep(0.5)
-# display = pyg.display.set_mode(WINDOW_SIZE2, RESIZABLE)  # FULLSCREEN padrao, RESIZABLE dev_mode
 screen = pyg.Surface(SURF_SIZE)
 pyg.display.update()
 
