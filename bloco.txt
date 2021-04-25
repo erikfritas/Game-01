@@ -1,0 +1,131 @@
+pup = colisores(0+tcbx, pos['y']+tcby, pos['w']-tcbl, tm)
+    pdown = colisores(0+tcbx, pos['y'] + pos['h']-tm, pos['w']-tcbl, tm)
+    pleft = colisores(0, pos['y']+tml, tm, pos['h']-tmh)
+    pright = colisores(0 + pos['w']-tm, pos['y']+tml, tm, pos['h']-tmh)
+
+    for obj in objs:
+        cwplayer(obj, pup, 'up')
+        cwplayer(obj, pdown, 'down')
+        cwplayer(obj, pleft, 'left')
+        cwplayer(obj, pright, 'right')
+
+
+        def colisores(um, dois, tres, quatro):
+    return pyg.Rect(um, dois, tres, quatro)
+
+
+def dev_mod(um, dois, tres, quatro):
+    return pyg.draw.rect(screen, cor['azul'], (um, dois, tres, quatro))
+
+
+
+
+
+
+        if ctrl['up'] and not self.pup.collidelistall(objcs) and not pos['y']-scroll[1] < 0:
+            pos['y'] -= ctrl['speed']
+        elif ctrl['down'] and not self.pdown.collidelistall(objcs) and not pos['y']-scroll[1] > 665:
+            pos['y'] += ctrl['speed']
+        if ctrl['left'] and not pleft.collidelistall(objcs) and not pos['x']-scroll[0] < 0:
+            pos['x'] -= ctrl['speed']
+        elif ctrl['right'] and not pright.collidelistall(objcs) and not pos['x']-scroll[0] > 1328:
+            pos['x'] += ctrl['speed']
+
+
+            if not p1.pos('x') > 340 and not p1.pos('x') < 150:
+                true_scroll[0] += (p1.pos('x') - true_scroll[0] - 326)/20
+            if not p1.pos('y') < 104 and not p1.pos('y') > 536:
+                true_scroll[1] += (p1.pos('y') - true_scroll[1] - 200)/20
+            else:
+                pass
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   def colisores(um, dois, tres, quatro):
+    return pyg.Rect(um, dois, tres, quatro)
+
+
+def dev_mod(um, dois, tres, quatro):
+    return pyg.draw.rect(screen, cor['azul'], (um, dois, tres, quatro))
+
+
+def players(objs):
+    global player_image, dev_mode
+    screen.blit(player_image, (pos['x'], pos['y']))
+    for i in anim:
+        if anim[i]:
+            if cont <= contmaxW:
+                player_image = allAnims[f'p_{i}1']
+
+    if not dev_mode:
+        pup = colisores(pos['x']+tcbx, pos['y']+tcby, pos['w']-tcbl, tm)
+        pdown = colisores(pos['x']+tcbx, pos['y'] + pos['h']-tm, pos['w']-tcbl, tm)
+        pleft = colisores(pos['x'], pos['y']+tml, tm, pos['h']-tmh)
+        pright = colisores(pos['x'] + pos['w']-tm, pos['y']+tml, tm, pos['h']-tmh)
+    else:
+        pup = pyg.draw.rect(screen, cor["azul"], (pos['x']+tcbx, pos['y']+tcby, pos['w']-tcbl, tm))
+        pdown = pyg.draw.rect(screen, cor["azul"], (pos['x']+tcbx, pos['y'] + pos['h']-tm, pos['w']-tcbl, tm))
+        pleft = pyg.draw.rect(screen, cor["azul"], (pos['x'], pos['y']+tml, tm, pos['h']-tmh))
+        pright = pyg.draw.rect(screen, cor["azul"], (pos['x'] + pos['w']-tm, pos['y']+tml, tm, pos['h']-tmh))
+
+
+    for obj in objs:
+        cwplayer(obj, pup, 'up')
+        cwplayer(obj, pdown, 'down')
+        cwplayer(obj, pleft, 'left')
+        cwplayer(obj, pright, 'right')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+pup = colisores(tcbx, tcby, pos['w']-tcbl, tm)
+    pdown = colisores(tcbx, pos['h']-tm, pos['w']-tcbl, tm)
+    pleft = colisores(0, tml, tm, pos['h']-tmh)
+    pright = colisores(pos['w']-tm, tml, tm, pos['h']-tmh)
+
+    for obj in objs:
+        cwplayer(obj, pup, 'up')
+        cwplayer(obj, pdown, 'down')
+        cwplayer(obj, pleft, 'left')
+        cwplayer(obj, pright, 'right')
+
+
+    pup = colisores(tcbx, tcby, pos['w'] - tcbl, tm)
+    pdown = colisores(tcbx, pos['h'] - tm, pos['w'] - tcbl, tm)
+    pleft = colisores(0, tml, tm, pos['h'] - tmh)
+    pright = colisores(pos['w'] - tm, tml, tm, pos['h'] - tmh)
+
+
